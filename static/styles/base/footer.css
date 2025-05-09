@@ -1,0 +1,17 @@
+footer {
+    position: static;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h5 {
+    font-size: 20px;
+    margin: 0;
+}
+
+h6 {
+    font-size: 20px;
+    margin-top: 0;
+
+}

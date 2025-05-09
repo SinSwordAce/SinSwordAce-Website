@@ -1,0 +1,27 @@
+/* Navbar header */
+#h-nav {
+    text-align: center;
+    font-size: 0;
+}
+
+.nav-link {
+    padding: 5px;
+    margin: 5px;
+}
+
+.nav-link ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.nav-link a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
