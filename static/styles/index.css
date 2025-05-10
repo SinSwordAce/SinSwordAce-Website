@@ -7,8 +7,8 @@
 }
 
 .box {
-    width: 800px; /* Default width for desktop */
-    height: 800px;
+    width: 750px; /* Default width for desktop */
+    height: 750px;
     text-align: center;
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.50);
@@ -54,42 +54,33 @@
 
 .bigbox img {
     width: 100%; /* Makes the image take up the full width of its container */
-    max-width: 1200px; /* Ensures the image doesn't exceed its original size */
+    max-width: 1300px; /* Ensures the image doesn't exceed its original size */
     height: auto; /* Maintains the aspect ratio */
-}
-
-h1 {
-    font-size: 50px;
-    text-align: center;
-    margin: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.50);
-    background: rgba(255, 255, 255, 0.050);
-    border-radius: 50px;
-    margin-right: 100px;
-    margin-left: 100px;
 }
 
 h2 {
     font-size: 30px;
+    margin: 10px;
 }
 
 #com {
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
-    margin: 10px;
+    margin: 0px;
     border: 2px solid rgba(255, 255, 255, 0.50);
     background: rgba(255, 255, 255, 0.050);
-    border-radius: 50px;
+    border-radius: 25px;
     margin-top: 5px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+    width: auto;
 }
 
 p {
     padding-right: 50px;
     padding-left: 50px;
     text-align: justify;
-    font-size: 26px;
+    font-size: 25px;
 }
 
 #pics1 {
