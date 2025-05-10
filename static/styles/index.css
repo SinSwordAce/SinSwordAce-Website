@@ -1,18 +1,26 @@
 .container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap; /* Allows the boxes to wrap to the next line */
+    justify-content: center; /* Centers the boxes horizontally */
+    gap: 15px; /* Adds space between the boxes */
     margin-top: 20px;
-    column-gap: 15px;
-    row-gap: 15px;
 }
 
 .box {
-    width: 800px;
+    width: 800px; /* Default width for desktop */
     height: 800px;
     text-align: center;
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.50);
     background: rgba(255, 255, 255, 0.050);
+}
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 768px) {
+    .box {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
 }
 
 .minibox1 {
@@ -42,6 +50,12 @@
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.bigbox img {
+    width: 100%; /* Makes the image take up the full width of its container */
+    max-width: 1200px; /* Ensures the image doesn't exceed its original size */
+    height: auto; /* Maintains the aspect ratio */
 }
 
 h1 {
