@@ -1,5 +1,5 @@
 body {
-  background-image: url("../../background/fullback_1.webp"); /* Corrected relative path */
+  background-image: url("../../background/fullback_1.png"); /* Corrected relative path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
