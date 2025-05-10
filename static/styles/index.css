@@ -75,13 +75,33 @@ p {
     padding-right: 50px;
     padding-left: 50px;
     text-align: justify;
-    font-size: 27px;
+    font-size: 26px;
 }
 
 #pics1 {
     padding: 10px;
 }
 
+#pics1 img {
+    width: 125px;
+    height: auto;
+}
+
 #pics2 {
     padding: 10px;
+}
+
+#img1 {
+    width: 125px;
+    height: auto;
+}
+
+#img2 {
+    width: 250px;
+    height: auto;
+}
+
+#pics3 img {
+    width: 125px;
+    height: auto;
 }
