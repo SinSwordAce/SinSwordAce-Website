@@ -1,18 +1,8 @@
-.b1 {
-    font-size: 16px;
-    border: 10px solid rgb(169, 169, 169, 0.500);
-    border-radius: 17px;
-    width: 370px;
-    height: 346px;
-    background: rgb(255, 255, 255, 0.050);
-
-}
-
 .box {
     background: rgb(255, 255, 255, 0.050);
     border: 2px solid rgba(255, 255, 255, 0.50);
     border-radius: 20px;
-    width: 300px;
+    width: 1350px;
     height: auto;
     margin: 25px auto; /* Centers the box horizontally */
     text-align: center;
@@ -39,8 +29,8 @@
 }
 
 .social-box:hover {
-    transform: scale(1.05); /* Slightly enlarges the box on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+    transform: scale(1.50); /* Slightly enlarges the box on hover */
+    box-shadow: 0 600px 1000px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
 }
 
 .social-link {
@@ -50,13 +40,13 @@
     align-items: center; /* Vertically centers the icon and text */
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 90px;
     font-weight: bold;
     gap: 10px; /* Adds space between the icon and the text */
 }
 
 .social-link img {
     margin-bottom: 0; /* Removes the bottom margin since the icon is now side by side with the text */
-    width: 40px; /* Ensures consistent icon size */
-    height: 40px;
+    width: 100px; /* Ensures consistent icon size */
+    height: auto;
 }

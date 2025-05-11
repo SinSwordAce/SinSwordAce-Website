@@ -1,4 +1,4 @@
-body {
+html {
   background-image: url("../../background/fullback_1.png"); /* Corrected relative path */
   background-size: cover;
   background-repeat: no-repeat;
@@ -6,10 +6,5 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-}
-
-main {
-  padding-top: 1vh;
-  min-height: auto;
   color: white;
 }
