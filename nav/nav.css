@@ -1,0 +1,18 @@
+/* Navbar header */
+#nav {
+    text-align: center;
+    font-size: 0;
+}
+
+.nav-link {
+    border: 10px;
+    border-radius: 35px;
+    border-style: hidden inset hidden inset;
+    border-left-color: #ff0000;
+    border-right-color: #ffae00;
+    font-size: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
