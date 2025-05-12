@@ -1,0 +1,85 @@
+/* Timeline container */
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 0;
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Light vertical line */
+}
+
+/* Timeline item */
+.timeline-item {
+    position: relative;
+    margin: 50px 0; /* Increased margin for better spacing */
+    width: 100%;
+}
+
+/* Timeline content box */
+.timeline-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 0px 45px 0px 45px;
+    width: 90%; /* Adjust width of the content box */
+    color: white;
+    text-align: center;
+    font-size: 2rem; /* Doubled the font size */
+}
+
+/* Positioning for left and right boxes */
+.timeline-item:nth-child(odd) .timeline-content {
+    left: -60%; /* Position to the left of the vertical line */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 58%; /* Position to the right of the vertical line */
+}
+
+/* Connecting lines */
+.timeline-item:nth-child(odd) .timeline-content::before,
+.timeline-item:nth-child(even) .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    right: -60px; /* Connect to the vertical line on the left */
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    left: -60px; /* Connect to the vertical line on the right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 10px; /* Adjust vertical line position for smaller screens */
+    }
+
+    .timeline-content {
+        width: 90%; /* Full width for smaller screens */
+        left: 20px !important; /* Align content to the left */
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+        left: 10px; /* Adjust connecting lines for smaller screens */
+    }
+}
