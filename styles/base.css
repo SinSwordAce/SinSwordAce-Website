@@ -1,5 +1,5 @@
 html {
-    background-image: url("/images/background/wallpaper.webp");
+    background-image: url("../images/background/wallpaper.webp");
     background-size: cover;
     background-repeat:repeat;
     height: 100vh;
