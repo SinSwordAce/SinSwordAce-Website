@@ -1,6 +1,6 @@
 .box {
-    background: rgb(255, 255, 255, 0.050);
-    border: 2px solid rgba(255, 255, 255, 0.50);
+    background: rgb(255, 255, 255, 0.030);
+    border: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
     min-width: auto;
     max-width: 1350px;
@@ -12,6 +12,9 @@
 .box:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
+    background: rgb(255, 255, 255, 0.060);
+    border: 2px solid rgba(255, 255, 255, 0.45);
+
 }
 
 .social-link {

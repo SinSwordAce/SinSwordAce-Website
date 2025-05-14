@@ -3,33 +3,32 @@
     flex-wrap: wrap; /* Allows the boxes to wrap to the next line */
     justify-content: center; /* Centers the boxes horizontally */
     gap: 15px; /* Adds space between the boxes */
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .box {
     width: 750px; /* Default width for desktop */
-    height: 750px;
+    height: auto;
     text-align: center;
     border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.50);
-    background: rgba(255, 255, 255, 0.050);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.030);
 }
 
-/* Media query for smaller screens (phones) */
-@media (max-width: 768px) {
-    .box {
-        width: 100%; /* Full width for smaller screens */
-        height: auto; /* Adjust height automatically */
-    }
+.combobox {
+    width: 750px; /* Default width for desktop */
+    height: auto;
+    text-align: center;
+    border-radius: 20px;
 }
 
 .minibox1 {
     width: auto;
     height: auto;
     text-align: center;
-    padding-bottom: 20px;
     border-radius: 20px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.030);
 }
 
 .minibox2 {
@@ -37,7 +36,8 @@
     height: auto;
     text-align: center;
     border-radius: 20px;
-    border-top: 2px solid rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.030);
 }
 
 .bigbox {
@@ -45,8 +45,8 @@
     height: auto;
     text-align: center;
     border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.50);
-    background: rgba(255, 255, 255, 0.050);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.030);
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
@@ -117,7 +117,13 @@ source {
 }
 
 @media (max-width: 768px) {
-    .timeline-item {
-        padding: 10px;
+    .box {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .combobox {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height automatically */
     }
 }

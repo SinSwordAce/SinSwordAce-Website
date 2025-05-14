@@ -14,17 +14,25 @@ html {
 }
 
 .nav-link {
-    border: 10px;
+    border: 3px rgba(255, 200, 80, 0.5);
     border-radius: 35px;
-    border-style: hidden inset hidden inset;
-    border-left-color: #ff0000;
-    border-right-color: #ffae00;
+    border-style: hidden solid hidden solid;
     font-size: 40px;
     padding: 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
 } 
+
+.nav-link:hover {
+    background: rgba(0, 0, 0, 0.50);
+    border: 12px;
+    border-color: #ff0000;
+    border-style: hidden solid hidden solid;
+    transition: 0.6s ease-in-out;
+    transition-delay: 0.03s;
+}
+
 
 @media (max-width: 768px) {
     .container {
