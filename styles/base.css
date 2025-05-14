@@ -24,4 +24,10 @@ html {
     text-decoration: none;
     color: white;
     font-weight: bold;
+} 
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }

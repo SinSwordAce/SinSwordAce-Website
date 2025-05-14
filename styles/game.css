@@ -83,3 +83,12 @@
         left: 10px; /* Adjust connecting lines for smaller screens */
     }
 }
+
+@media (max-width: 768px) {
+    .timeline-item {
+        padding: 10px;
+    }
+    .timeline {
+        
+    }
+}

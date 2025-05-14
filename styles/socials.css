@@ -2,35 +2,16 @@
     background: rgb(255, 255, 255, 0.050);
     border: 2px solid rgba(255, 255, 255, 0.50);
     border-radius: 20px;
-    width: 1350px;
+    min-width: auto;
+    max-width: 1350px;
     height: auto;
     margin: 25px auto; /* Centers the box horizontally */
     text-align: center;
 }
 
-.social-links {
-    display: flex;
-    flex-wrap: wrap; /* Allows the boxes to wrap to the next line if needed */
-    gap: 20px; /* Adds space between the boxes */
-    justify-content: center; /* Centers the boxes horizontally */
-    margin-top: 20px;
-}
-
-.social-box {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Light border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px;
-    text-align: center;
-    width: 150px; /* Fixed width for each box */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    
-}
-
-.social-box:hover {
-    transform: scale(1.50); /* Slightly enlarges the box on hover */
-    box-shadow: 0 600px 1000px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+.box:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 
 .social-link {
@@ -49,4 +30,21 @@
     margin-bottom: 0; /* Removes the bottom margin since the icon is now side by side with the text */
     width: 100px; /* Ensures consistent icon size */
     height: auto;
+}
+
+p { 
+    font-size: 90px;
+    margin: 0; /* Removes default margin */
+}
+
+@media (max-width: 768px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        font-size-adjust: 0.21 ;
+    }
 }
